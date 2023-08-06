@@ -34,7 +34,6 @@ header {
   background-color: rgb(180, 180, 180);
   box-shadow: 1px 1px 5px #000;
   width: 100%;
-  position: fixed;
 }
 
 .menu {
@@ -335,8 +334,8 @@ footer li a:visited {
   }
 
   .mapa {
-    width: 400px;
-    height: 300px;
+    width: 440px;
+    height: 380px;
   }
 
   .contenedor2 {
