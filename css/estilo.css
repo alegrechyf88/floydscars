@@ -1,188 +1,141 @@
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
-
-}
-
-h2 {
-  font-size: 2.5rem;
-  font-family: Permanent Marker;
-  text-align: center;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-family: Ysabeau SC;
-  text-align: center;
-}
-
-p {
-  font-family: Ysabeau SC;
-}
-
-.principal {
-  display: flex;
-  justify-content: space-between;
-}
-
-main {
-  background-color: rgb(180, 180, 180);
-}
+  box-sizing: border-box; }
 
 header {
-  background-color: rgb(180, 180, 180);
   box-shadow: 1px 1px 5px #000;
-  width: 100%;
-}
+  width: 100%; }
+  header .menu {
+    padding: 0;
+    list-style: none;
+    text-align: center; }
+  header .menu li {
+    display: inline-block;
+    text-align: center; }
+  header .menu li a {
+    padding: 8px 16px;
+    color: white;
+    font-family: Ysabeau SC;
+    text-decoration: none;
+    display: inline-block; }
+  header .menu li a:hover {
+    font-family: Ysabeau SC;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: red; }
 
-.menu {
+footer {
+  background-color: black;
+  color: gray;
+  grid-area: footer; }
+  footer li {
+    display: inline-block; }
+  footer li img {
+    width: 20px; }
+  footer p {
+    text-align: center; }
+  footer li a:link {
+    text-decoration: none; }
+  footer li a:visited {
+    text-decoration: none;
+    color: white; }
 
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-
-.menu li {
-  display: inline-block;
-  text-align: center;
-}
-
-.menu li a {
-  padding: 8px 16px;
-
-  color: white;
-  font-family: Ysabeau SC;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.menu li a:hover {
-  font-family: Ysabeau SC;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: red;
-}
+main {
+  background-image: linear-gradient(to bottom, #505050, #c7c7c7); }
+  main h2 {
+    font-size: 2.5rem;
+    font-family: Permanent Marker;
+    text-align: center; }
+  main p {
+    font-family: Ysabeau SC; }
+  main h3 {
+    font-size: 1.5rem;
+    font-family: Ysabeau SC;
+    text-align: center; }
 
 .nosotros,
 .recomienda {
   padding: 5px;
-  margin: 10px;
-}
-
+  margin: 10px; }
 
 .contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
-    "HEADER HEADER HEADER"
-    "CONTACT SUSCRIPCION UBI"
-    "FOOTER FOOTER FOOTER";
-}
+  grid-template-areas: "HEADER HEADER HEADER" "CONTACT SUSCRIPCION UBI" "FOOTER FOOTER FOOTER"; }
 
 .contenedor2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "TITULO TITULO"
-    "preparadopventa chaperia"
-    "lavadofull mecanicaligera";
-
-}
+  grid-template-areas: "TITULO TITULO" "preparadopventa chaperia" "lavadofull mecanicaligera"; }
 
 .contenedor3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "TITULO TITULO"
-    "GOL FORDK"
-    "SPIN CHEVROLET";
-}
+  grid-template-areas: "TITULO TITULO" "GOL FORDK" "SPIN CHEVROLET"; }
 
 .contenedor4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "TITULO TITULO"
-    "preparadopventa preparadopventa"
-    "chaperia chaperia"
-    "lavadofull mecanicaligera";
-}
+  grid-template-areas: "TITULO TITULO" "preparadopventa preparadopventa" "chaperia chaperia" "lavadofull mecanicaligera"; }
 
-.carousel-inner img {display:flex;
-margin:0 auto;}
+.carousel-inner img {
+  display: flex;
+  margin: 0 auto; }
 
 .divimg {
-  display: inline;}
+  display: inline; }
 
 .titulo {
-  grid-area: TITULO;
-}
+  grid-area: TITULO; }
 
 .preparadopventa {
-  grid-area: preparadopventa;
-}
+  grid-area: preparadopventa; }
 
 .chaperia {
-  grid-area: chaperia;
-}
+  grid-area: chaperia; }
 
 .lavadofull {
-  grid-area: lavadofull;
-}
+  grid-area: lavadofull; }
 
 .mecanicaligera {
-  grid-area: mecanicaligera;
-}
+  grid-area: mecanicaligera; }
 
 .gol {
-  grid-area: GOL;
-}
+  grid-area: GOL; }
 
 .chevrolet {
-  grid-area: CHEVROLET;
-}
+  grid-area: CHEVROLET; }
 
 .spin {
-  grid-area: SPIN;
-}
+  grid-area: SPIN; }
 
 .fordk {
-  grid-area: FORDK;
-}
+  grid-area: FORDK; }
 
 .header {
-  grid-area: HEADER;
-}
+  grid-area: HEADER; }
 
 .ubi {
-  grid-area: UBI;
-}
+  grid-area: UBI; }
 
 .contact {
-  grid-area: CONTACT;
-}
+  grid-area: CONTACT; }
 
 .suscripcion {
-  grid-area: SUSCRIPCION;
-}
+  grid-area: SUSCRIPCION; }
 
 .suscripcion label,
 .contact label {
   width: 200px;
-  text-align: center;
-}
-
+  text-align: center; }
 
 .ubi,
 .contact,
 .suscripcion {
   padding: 5px;
   margin: 10px;
-  border: solid gray 3px;
-}
-
-
+  border: solid gray 3px; }
 
 .contenedor3 .gol,
 .chevrolet,
@@ -190,18 +143,15 @@ margin:0 auto;}
 .fordk {
   padding: 20px;
   margin: 10px;
-  box-shadow: 0px 0px 10px 0px #333 inset;
-}
+  box-shadow: 0px 0px 10px 0px #333 inset; }
 
 .contenedor2 img {
   width: 400px;
-  border: 1px double gray;
-}
+  border: 1px double gray; }
 
 .contenedor3 img {
   width: 400px;
-  border: 1px double gray;
-}
+  border: 1px double gray; }
 
 .preparadopventa,
 .chaperia,
@@ -209,53 +159,16 @@ margin:0 auto;}
 .mecanicaligera {
   padding: 20px;
   box-shadow: 0px 0px 10px 0px #333 inset;
-  margin: 10px;
-}
+  margin: 10px; }
 
 .contenedor4 img {
-  width: 40%;
-}
-
-footer {
-  background-color: black;
-  color: gray;
-  grid-area: footer;
-}
-
-footer li {
-  display: inline-block;
-}
-
-footer li img {
-  width: 20px;
-}
-
-footer p {
-  text-align: center;
-}
-
-footer li a:link {
-  text-decoration: none;
-}
-
-footer li a:visited {
-  text-decoration: none;
-  color: white;
-}
+  width: 40%; }
 
 .tienda {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, auto);
-  grid-template-areas:
-    "nav nav nav nav"
-    "vertical productos productos productos"
-    "vertical productos productos productos"
-    "vertical productos productos productos"
-    "vertical productos productos productos"
-    "footer footer footer footer";
-
-}
+  grid-template-areas: "nav nav nav nav" "vertical productos productos productos" "vertical productos productos productos" "vertical productos productos productos" "vertical productos productos productos" "footer footer footer footer"; }
 
 .productos {
   grid-area: productos;
@@ -263,120 +176,71 @@ footer li a:visited {
   border: 2px double gray;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
+  grid-template-rows: 1fr 1fr 1fr; }
 
 .prodx {
   margin: 20px;
   padding: 20px;
   width: 200px;
-  height: 200px;
-}
+  height: 200px; }
 
 .productos img {
   width: 150px;
-  border: 1px double gray;
-}
+  border: 1px double gray; }
 
 .productos img:hover {
   width: 200px;
-  border: 2px double gray;
-}
+  border: 2px double gray; }
 
 .vertical {
-  background-color:#000;
-  grid-area: vertical;
-}
+  background-color: #000;
+  grid-area: vertical; }
 
 .vertical ul {
   list-style-type: none;
   width: 400px;
-  background-color: black;
-}
+  background-color: black; }
 
 .vertical li a {
   display: block;
   color: white;
   font-family: Ysabeau SC;
   padding: 8px 16px;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .vertical li a:hover {
   font-family: Ysabeau SC;
   background-color: rgba(89, 89, 89, 0.5);
-  color: red;
-}
+  color: red; }
 
 .imgprinc {
   width: 600px;
-  height: 400px;
-}
+  height: 400px; }
 
-
-@media only screen and (max-width:768px) {
-
+@media only screen and (max-width: 480px) {
   .imgprinc {
     width: 450px;
-    height: 280px;
-  }
-
+    height: 280px; }
   .contenedor {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat (5, auto);
-    grid-template-areas:
-      "HEADER"
-      "CONTACT"
-      "SUSCRIPCION"
-      "UBI"
-      "FOOTER";
-  }
-
+    grid-template-rows: repeat 5, auto;
+    grid-template-areas: "HEADER" "CONTACT" "SUSCRIPCION" "UBI" "FOOTER"; }
   .mapa {
     width: 440px;
-    height: 380px;
-  }
-
+    height: 380px; }
   .contenedor2 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat (5, auto);
-
-    grid-template-areas:
-      "TITULO"
-      "preparadopventa"
-      "chaperia"
-      "lavadofull"
-      "mecanicaligera";
-
-  }
-
-
+    grid-template-rows: repeat 5, auto;
+    grid-template-areas: "TITULO" "preparadopventa" "chaperia" "lavadofull" "mecanicaligera"; }
   .contenedor3 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat (5, auto);
-    grid-template-areas:
-      "TITULO"
-      "GOL"
-      "FORDK"
-      "CHEVROLET"
-      "SPIN";
-  }
-
-
+    grid-template-rows: repeat 5, auto;
+    grid-template-areas: "TITULO" "GOL" "FORDK" "CHEVROLET" "SPIN"; }
   .contenedor4 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat (4, auto);
-    grid-template-areas:
-      "TITULO"
-      "preparadopventa"
-      "chaperia"
-      "lavadofull"
-      "mecanicaligera";
-  }
-
-  
-}
+    grid-template-rows: repeat 4, auto;
+    grid-template-areas: "TITULO" "preparadopventa" "chaperia" "lavadofull" "mecanicaligera"; } }

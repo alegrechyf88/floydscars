@@ -1,0 +1,32 @@
+header {
+    box-shadow: 1px 1px 5px #000;
+    width: 100%;
+
+  
+  .menu {
+  
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .menu li {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a {
+    padding: 8px 16px;
+  
+    color: white;
+    font-family: $parrafoymas;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .menu li a:hover {
+    font-family: $parrafoymas;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: red;
+  }
+}
