@@ -24,22 +24,6 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     color: red; }
 
-footer {
-  background-color: black;
-  color: gray;
-  grid-area: footer; }
-  footer li {
-    display: inline-block; }
-  footer li img {
-    width: 20px; }
-  footer p {
-    text-align: center; }
-  footer li a:link {
-    text-decoration: none; }
-  footer li a:visited {
-    text-decoration: none;
-    color: white; }
-
 main {
   background-image: linear-gradient(to bottom, #505050, #c7c7c7); }
   main h2 {
@@ -62,31 +46,22 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "HEADER HEADER HEADER"
- "CONTACT SUSCRIPCION UBI"
- "FOOTER FOOTER FOOTER"; }
+  grid-template-areas: "HEADER HEADER HEADER" "CONTACT SUSCRIPCION UBI" "FOOTER FOOTER FOOTER"; }
 
 .contenedor2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "TITULO TITULO"
- "preparadopventa chaperia"
- "lavadofull mecanicaligera"; }
+  grid-template-areas: "TITULO TITULO" "preparadopventa chaperia" "lavadofull mecanicaligera"; }
 
 .contenedor3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "TITULO TITULO"
- "GOL FORDK"
- "SPIN CHEVROLET"; }
+  grid-template-areas: "TITULO TITULO" "GOL FORDK" "SPIN CHEVROLET"; }
 
 .contenedor4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "TITULO TITULO"
- "preparadopventa preparadopventa"
- "chaperia chaperia"
- "lavadofull mecanicaligera"; }
+  grid-template-areas: "TITULO TITULO" "preparadopventa preparadopventa" "chaperia chaperia" "lavadofull mecanicaligera"; }
 
 .carousel-inner img {
   display: flex;
@@ -177,12 +152,7 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, auto);
-  grid-template-areas: "nav nav nav nav"
- "vertical productos productos productos"
- "vertical productos productos productos"
- "vertical productos productos productos"
- "vertical productos productos productos"
- "footer footer footer footer"; }
+  grid-template-areas: "nav nav nav nav" "vertical productos productos productos" "vertical productos productos productos" "vertical productos productos productos" "vertical productos productos productos" "footer footer footer footer"; }
 
 .productos {
   grid-area: productos;
@@ -231,6 +201,23 @@ main {
   width: 600px;
   height: 400px; }
 
+footer {
+  background-color: black;
+  color: gray;
+  grid-area: footer; }
+  footer li {
+    display: inline-block;
+    text-decoration: none; }
+  footer li img {
+    width: 20px; }
+  footer p {
+    text-align: center; }
+  footer li a:link {
+    text-decoration: none; }
+  footer li a:visited {
+    text-decoration: none;
+    color: white; }
+
 @media only screen and (max-width: 480px) {
   .imgprinc {
     width: 450px;
@@ -239,11 +226,7 @@ main {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat 5, auto;
-    grid-template-areas: "HEADER"
- "CONTACT"
- "SUSCRIPCION"
- "UBI"
- "FOOTER"; }
+    grid-template-areas: "HEADER" "CONTACT" "SUSCRIPCION" "UBI" "FOOTER"; }
   .mapa {
     width: 440px;
     height: 380px; }
@@ -251,26 +234,14 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat 5, auto;
-    grid-template-areas: "TITULO"
- "preparadopventa"
- "chaperia"
- "lavadofull"
- "mecanicaligera"; }
+    grid-template-areas: "TITULO" "preparadopventa" "chaperia" "lavadofull" "mecanicaligera"; }
   .contenedor3 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat 5, auto;
-    grid-template-areas: "TITULO"
- "GOL"
- "FORDK"
- "CHEVROLET"
- "SPIN"; }
+    grid-template-areas: "TITULO" "GOL" "FORDK" "CHEVROLET" "SPIN"; }
   .contenedor4 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat 4, auto;
-    grid-template-areas: "TITULO"
- "preparadopventa"
- "chaperia"
- "lavadofull"
- "mecanicaligera"; } }
+    grid-template-rows: repeat 5, auto;
+    grid-template-areas: "TITULO" "preparadopventa" "chaperia" "lavadofull" "mecanicaligera"; } }
