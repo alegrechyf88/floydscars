@@ -44,6 +44,12 @@ main {
     "preparadopventa chaperia"
     "lavadofull mecanicaligera";
 
+    .imserv {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    
+    img {width: 90%;}
+    }
     .titulo {
       grid-area: TITULO;
     }
@@ -53,9 +59,6 @@ main {
       margin: 0 auto;
     }
 
-    .divimg {
-      display: inline;
-    }
     .preparadopventa {
       grid-area: preparadopventa;
     }
@@ -120,11 +123,16 @@ img {
     .fordk {
       grid-area: FORDK;
     }
+
+    .divimg {display:flex;
+    justify-content: center;
+    align-items: center;
+
 img {
-      width: 400px;
+      width: 300px;
       border: 1px double gray;
     }
-    
+  }
 }
 
 
