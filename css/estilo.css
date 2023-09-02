@@ -37,16 +37,39 @@ main {
     font-family: Ysabeau SC;
     text-align: center; }
 
-.nosotros,
-.recomienda {
-  padding: 5px;
-  margin: 10px; }
+.contenedor0 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr; }
+  .contenedor0 .nosotros,
+  .contenedor0 .recomienda {
+    padding: 5px;
+    margin: 10px; }
+  .contenedor0 .imgprinc {
+    width: 600px;
+    height: 400px; }
 
-.contenedor {
+.contenedor4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "HEADER HEADER HEADER" "CONTACT SUSCRIPCION UBI" "FOOTER FOOTER FOOTER"; }
+  .contenedor4 .ubi,
+  .contenedor4 .contact,
+  .contenedor4 .suscripcion {
+    padding: 5px;
+    margin: 10px;
+    border: solid gray 3px; }
+  .contenedor4 .ubi {
+    grid-area: UBI; }
+  .contenedor4 .contact {
+    grid-area: CONTACT; }
+  .contenedor4 .suscripcion {
+    grid-area: SUSCRIPCION; }
+  .contenedor4 .suscripcion label,
+  .contenedor4 .contact label {
+    width: 200px;
+    text-align: center; }
 
 .contenedor2 {
   display: grid;
@@ -99,27 +122,6 @@ main {
 
 .header {
   grid-area: HEADER; }
-
-.ubi {
-  grid-area: UBI; }
-
-.contact {
-  grid-area: CONTACT; }
-
-.suscripcion {
-  grid-area: SUSCRIPCION; }
-
-.suscripcion label,
-.contact label {
-  width: 200px;
-  text-align: center; }
-
-.ubi,
-.contact,
-.suscripcion {
-  padding: 5px;
-  margin: 10px;
-  border: solid gray 3px; }
 
 .contenedor3 .gol,
 .chevrolet,
@@ -197,10 +199,6 @@ main {
   background-color: rgba(89, 89, 89, 0.5);
   color: red; }
 
-.imgprinc {
-  width: 600px;
-  height: 400px; }
-
 footer {
   background-color: black;
   color: gray;
@@ -225,28 +223,27 @@ footer {
     align-items: center; }
 
 @media (max-width: 480px) {
-  .imgprinc {
-    width: 450px;
-    height: 280px; }
-  .contenedor {
+  .contenedor0 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 3, auto; }
+    .contenedor0 .imgprinc {
+      width: 450px;
+      height: 280px; }
+  .contenedor4 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat 5, auto;
     grid-template-areas: "HEADER" "CONTACT" "SUSCRIPCION" "UBI" "FOOTER"; }
-  .mapa {
-    width: 440px;
-    height: 380px; }
-  .contenedor2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat 5, auto;
-    grid-template-areas: "TITULO" "preparadopventa" "chaperia" "lavadofull" "mecanicaligera"; }
-  .contenedor3 {
+    .contenedor4 .mapa {
+      width: 440px;
+      height: 380px; }
+  .contenedor1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat 5, auto;
     grid-template-areas: "TITULO" "GOL" "FORDK" "CHEVROLET" "SPIN"; }
-  .contenedor4 {
+  .contenedor3 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat 5, auto;

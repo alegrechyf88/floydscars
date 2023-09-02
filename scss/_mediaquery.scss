@@ -1,11 +1,17 @@
 @media (max-width:480px) {
-  
+
+  .contenedor0 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (3, auto);
+
     .imgprinc {
       width: 450px;
       height: 280px;
     }
   
-    .contenedor {
+  }
+    .contenedor4 {
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: repeat (5, auto);
@@ -15,29 +21,14 @@
         "SUSCRIPCION"
         "UBI"
         "FOOTER";
+
+        .mapa {
+          width: 440px;
+          height: 380px;
+        }
     }
   
-    .mapa {
-      width: 440px;
-      height: 380px;
-    }
-  
-    .contenedor2 {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat (5, auto);
-  
-      grid-template-areas:
-        "TITULO"
-        "preparadopventa"
-        "chaperia"
-        "lavadofull"
-        "mecanicaligera";
-  
-    }
-  
-  
-    .contenedor3 {
+    .contenedor1 {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat (5, auto);
@@ -50,7 +41,7 @@
     }
   
   
-    .contenedor4 {
+    .contenedor3 {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat (5, auto);
