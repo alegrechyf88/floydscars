@@ -18,13 +18,11 @@ main {
   }
 }
 
-
-
 .contenedor0 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  
+
 .nosotros,
 .recomienda {
   padding: 5px;
@@ -35,51 +33,6 @@ main {
   width: 600px;
   height: 400px;
 }
-}
-
-.contenedor4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    "HEADER HEADER HEADER"
-    "CONTACT SUSCRIPCION UBI"
-    "FOOTER FOOTER FOOTER";
-
-  .ubi,
-  .contact,
-  .suscripcion {
-    padding: 5px;
-    margin: 10px;
-    border: solid gray 3px;
-  }
-
-  .ubi {
-    grid-area: UBI;
-  }
-
-  .contact {
-    grid-area: CONTACT;
-  }
-
-  .suscripcion {
-    grid-area: SUSCRIPCION;
-  }
-
-  .suscripcion label,
-  .contact label {
-    width: 200px;
-    text-align: center;
-  }
-}
-
-.contenedor2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "TITULO TITULO"
-    "preparadopventa chaperia"
-    "lavadofull mecanicaligera";
 
 }
 
@@ -88,88 +41,40 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "TITULO TITULO"
-    "GOL FORDK"
-    "SPIN CHEVROLET";
-}
-
-.contenedor4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "TITULO TITULO"
-    "preparadopventa preparadopventa"
-    "chaperia chaperia"
+    "preparadopventa chaperia"
     "lavadofull mecanicaligera";
-}
 
-.carousel-inner img {
-  display: flex;
-  margin: 0 auto;
-}
+    .titulo {
+      grid-area: TITULO;
+    }
 
-.divimg {
-  display: inline;
-}
+    .carousel-inner img {
+      display: flex;
+      margin: 0 auto;
+    }
 
-.titulo {
-  grid-area: TITULO;
-}
-
-.preparadopventa {
-  grid-area: preparadopventa;
-}
-
-.chaperia {
-  grid-area: chaperia;
-}
-
-.lavadofull {
-  grid-area: lavadofull;
-}
-
-.mecanicaligera {
-  grid-area: mecanicaligera;
-}
-
-.gol {
-  grid-area: GOL;
-}
-
-.chevrolet {
-  grid-area: CHEVROLET;
-}
-
-.spin {
-  grid-area: SPIN;
-}
-
-.fordk {
-  grid-area: FORDK;
-}
-
-.header {
-  grid-area: HEADER;
-}
-
-
-.contenedor3 .gol,
-.chevrolet,
-.spin,
-.fordk {
-  padding: 20px;
-  margin: 10px;
-  box-shadow: 0px 0px 10px 0px #333 inset;
-}
-
-.contenedor2 img {
-  width: 400px;
-  border: 1px double gray;
-}
-
-.contenedor3 img {
-  width: 400px;
-  border: 1px double gray;
-}
+    .divimg {
+      display: inline;
+    }
+    .preparadopventa {
+      grid-area: preparadopventa;
+    }
+    
+    .chaperia {
+      grid-area: chaperia;
+    }
+    
+    .lavadofull {
+      grid-area: lavadofull;
+    }
+    
+    .mecanicaligera {
+      grid-area: mecanicaligera;
+    }
+img {
+      width: 400px;
+      border: 1px double gray;
+    }
 
 .preparadopventa,
 .chaperia,
@@ -180,8 +85,46 @@ main {
   margin: 10px;
 }
 
-.contenedor4 img {
-  width: 40%;
+}
+
+.contenedor1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "TITULO TITULO"
+    "GOL FORDK"
+    "SPIN CHEVROLET";
+    .gol,
+    .chevrolet,
+    .spin,
+    .fordk {
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0px 0px 10px 0px #333 inset;
+    }
+    .titulo {
+      grid-area: TITULO;
+    }
+    .gol {
+      grid-area: GOL;
+    }
+    
+    .chevrolet {
+      grid-area: CHEVROLET;
+    }
+    
+    .spin {
+      grid-area: SPIN;
+    }
+    
+    .fordk {
+      grid-area: FORDK;
+    }
+img {
+      width: 400px;
+      border: 1px double gray;
+    }
+    
 }
 
 
@@ -197,7 +140,7 @@ main {
     "vertical productos productos productos"
     "footer footer footer footer";
 
-}
+
 
 .productos {
   grid-area: productos;
@@ -250,3 +193,40 @@ main {
   color: red;
 }
 
+}
+.contenedor4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "HEADER HEADER HEADER"
+    "CONTACT SUSCRIPCION UBI"
+    "FOOTER FOOTER FOOTER";
+
+  .ubi,
+  .contact,
+  .suscripcion {
+    padding: 5px;
+    margin: 10px;
+    border: solid gray 3px;
+  }
+
+  .ubi {
+    grid-area: UBI;
+  }
+
+  .contact {
+    grid-area: CONTACT;
+  }
+
+  .suscripcion {
+    grid-area: SUSCRIPCION;
+  }
+
+  .suscripcion label,
+  .contact label {
+    width: 200px;
+    text-align: center;
+  }
+  
+}
