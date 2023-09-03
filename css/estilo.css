@@ -227,14 +227,16 @@ footer {
   .contenedor1 {
     /* Pagina Detailing */
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: auto; }
     .contenedor1 .divimg {
       display: flex;
       flex-direction: column; }
   .contenedor3 {
     /* Pagina Servicios */
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: auto; }
     .contenedor3 .imserv {
       display: grid;
       grid-template-columns: 1fr 1fr; }

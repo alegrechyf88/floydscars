@@ -30,6 +30,7 @@
     .contenedor1 { /* Pagina Detailing */
       display: flex;
       flex-direction: column;
+      width: auto;
 
         .divimg{
           display: flex;
@@ -40,6 +41,7 @@
     .contenedor3 { /* Pagina Servicios */
       display: flex;
       flex-direction: column;
+      width: auto;
 
       .imserv {
         display: grid;
@@ -49,6 +51,7 @@
     }
     }
     footer {
+
 
 .piepagina {width: 100%;
 li { 
