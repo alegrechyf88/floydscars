@@ -222,21 +222,24 @@ footer {
       .contenedor4 .ubi .mapa,
       .contenedor4 .contact .mapa,
       .contenedor4 .suscripcion .mapa {
-        width: 100vw; }
-    .contenedor4 .contenedor1 {
-      /* Pagina Detailing */
-      width: auto;
+        width: 90vw;
+        height: auto; }
+  .contenedor1 {
+    /* Pagina Detailing */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 5, auto;
+    grid-template-areas: "TITULO" "GOL" "FORDK" "CHEVROLET" "SPIN"; }
+  .contenedor3 {
+    /* Pagina Servicios */
+    display: flex;
+    flex-direction: column; }
+    .contenedor3 .imserv {
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat 5, auto;
-      grid-template-areas: "TITULO" "GOL" "FORDK" "CHEVROLET" "SPIN"; }
-    .contenedor4 .contenedor3 {
-      /* Pagina Servicios */
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat 5, auto;
-      grid-template-areas: "TITULO" "preparadopventa" "chaperia" "lavadofull" "mecanicaligera"; }
-    .contenedor4 footer .piepagina {
+      grid-template-columns: 1fr 1fr; }
+      .contenedor3 .imserv img {
+        width: 40%; }
+    .contenedor3 footer .piepagina {
       width: 100%; }
-      .contenedor4 footer .piepagina li a {
+      .contenedor3 footer .piepagina li a {
         font-size: 0; } }

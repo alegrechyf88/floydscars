@@ -22,11 +22,12 @@
       margin: 10px;
       border: solid gray 3px;
 
-      .mapa {width:100vw;
+      .mapa {width:90vw;
+        height: auto;
     }
   }
+}
     .contenedor1 { /* Pagina Detailing */
-      width: auto;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat (5, auto);
@@ -40,15 +41,14 @@
   
   
     .contenedor3 { /* Pagina Servicios */
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat (5, auto);
-      grid-template-areas:
-        "TITULO"
-        "preparadopventa"
-        "chaperia"
-        "lavadofull"
-        "mecanicaligera";
+      display: flex;
+      flex-direction: column;
+
+      .imserv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      
+      img {width: 40%;}
     }
   
     footer {
@@ -57,12 +57,9 @@
 li { 
   a {font-size: 0;
   
-    }
-
-    
-  }    
-
-    }
   }
+}
+}
+    }
   }
 }
