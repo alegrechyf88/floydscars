@@ -37,9 +37,13 @@
         "FORDK"
         "CHEVROLET"
         "SPIN";
+
+        .divimg{
+          display: flex;
+          flex-direction: column;
     }
   
-  
+    }
     .contenedor3 { /* Pagina Servicios */
       display: flex;
       flex-direction: column;
@@ -48,18 +52,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
       
-      img {width: 40%;}
+      img {width: 100%;}
     }
-  
+    }
     footer {
 
 .piepagina {width: 100%;
 li { 
-  a {font-size: 0;
-  
-  }
+  a {font-size: 0;}
 }
 }
     }
   }
-}

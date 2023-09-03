@@ -230,6 +230,9 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat 5, auto;
     grid-template-areas: "TITULO" "GOL" "FORDK" "CHEVROLET" "SPIN"; }
+    .contenedor1 .divimg {
+      display: flex;
+      flex-direction: column; }
   .contenedor3 {
     /* Pagina Servicios */
     display: flex;
@@ -238,8 +241,8 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr; }
       .contenedor3 .imserv img {
-        width: 40%; }
-    .contenedor3 footer .piepagina {
-      width: 100%; }
-      .contenedor3 footer .piepagina li a {
-        font-size: 0; } }
+        width: 100%; }
+  footer .piepagina {
+    width: 100%; }
+    footer .piepagina li a {
+      font-size: 0; } }
