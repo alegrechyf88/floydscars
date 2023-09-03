@@ -197,6 +197,7 @@ footer {
 
 @media only screen and (max-width: 480px) {
   .contenedor0 {
+    /* Index - Pagina principal */
     display: flex;
     flex-direction: column; }
     .contenedor0 .imgprinc {
@@ -209,6 +210,7 @@ footer {
     .contenedor4 .ubi,
     .contenedor4 .contact,
     .contenedor4 .suscripcion {
+      width: 100%;
       padding: 5px;
       margin: 10px;
       border: solid gray 3px; }

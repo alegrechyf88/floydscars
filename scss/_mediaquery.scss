@@ -1,6 +1,6 @@
 @media only screen and (max-width: 480px) {
 
-  .contenedor0 {
+  .contenedor0 {  /* Index - Pagina principal */
     display: flex;
     flex-direction: column;
 
@@ -17,9 +17,11 @@
     .ubi,
     .contact,
     .suscripcion {
+      width: 100%;
       padding: 5px;
       margin: 10px;
       border: solid gray 3px;
+      
     }
   }
     .contenedor1 {
