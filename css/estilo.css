@@ -195,15 +195,34 @@ footer {
     justify-content: center;
     align-items: center; }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .contenedor0 {
-    /* Index - Pagina principal */
     display: flex;
     flex-direction: column; }
-    .contenedor0 .nosotros,
-    .contenedor0 .recomienda {
-      padding: 5px;
-      margin: 10px; }
     .contenedor0 .imgprinc {
-      width: 600px;
-      height: 400px; } }
+      width: 450px;
+      height: 280px; }
+  .contenedor4 {
+    /* Pagina Contacto */
+    display: flex;
+    flex-direction: column; }
+    .contenedor4 .ubi,
+    .contenedor4 .contact,
+    .contenedor4 .suscripcion {
+      padding: 5px;
+      margin: 10px;
+      border: solid gray 3px; }
+  .contenedor1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 5, auto;
+    grid-template-areas: "TITULO" "GOL" "FORDK" "CHEVROLET" "SPIN"; }
+  .contenedor3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 5, auto;
+    grid-template-areas: "TITULO" "preparadopventa" "chaperia" "lavadofull" "mecanicaligera"; }
+  footer .piepagina {
+    width: 100%; }
+    footer .piepagina li a {
+      font-size: 0; } }
