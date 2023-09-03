@@ -38,6 +38,7 @@ main {
     text-align: center; }
 
 .contenedor0 {
+  /* Index - Pagina principal */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr; }
@@ -50,6 +51,7 @@ main {
     height: 400px; }
 
 .contenedor3 {
+  /* Pagina Servicios */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "TITULO TITULO" "preparadopventa chaperia" "lavadofull mecanicaligera"; }
@@ -83,6 +85,7 @@ main {
     margin: 10px; }
 
 .contenedor1 {
+  /* Pagina Detailing */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "TITULO TITULO" "GOL FORDK" "SPIN CHEVROLET"; }
@@ -112,6 +115,7 @@ main {
       border: 1px double gray; }
 
 .tienda {
+  /* Pagina productos */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, auto);
@@ -153,22 +157,16 @@ main {
     color: red; }
 
 .contenedor4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "HEADER HEADER HEADER" "CONTACT SUSCRIPCION UBI" "FOOTER FOOTER FOOTER"; }
+  /* Pagina Contacto */
+  display: flex;
+  flex-direction: row; }
   .contenedor4 .ubi,
   .contenedor4 .contact,
   .contenedor4 .suscripcion {
+    width: 33%;
     padding: 5px;
     margin: 10px;
     border: solid gray 3px; }
-  .contenedor4 .ubi {
-    grid-area: UBI; }
-  .contenedor4 .contact {
-    grid-area: CONTACT; }
-  .contenedor4 .suscripcion {
-    grid-area: SUSCRIPCION; }
   .contenedor4 .suscripcion label,
   .contenedor4 .contact label {
     width: 200px;
@@ -197,29 +195,15 @@ footer {
     justify-content: center;
     align-items: center; }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .contenedor0 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat 3, auto; }
+    /* Index - Pagina principal */
+    display: flex;
+    flex-direction: column; }
+    .contenedor0 .nosotros,
+    .contenedor0 .recomienda {
+      padding: 5px;
+      margin: 10px; }
     .contenedor0 .imgprinc {
-      width: 450px;
-      height: 280px; }
-  .contenedor4 {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat 5, auto;
-    grid-template-areas: "HEADER" "CONTACT" "SUSCRIPCION" "UBI" "FOOTER"; }
-    .contenedor4 .mapa {
-      width: 440px;
-      height: 380px; }
-  .contenedor1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat 5, auto;
-    grid-template-areas: "TITULO" "GOL" "FORDK" "CHEVROLET" "SPIN"; }
-  .contenedor3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat 5, auto;
-    grid-template-areas: "TITULO" "preparadopventa" "chaperia" "lavadofull" "mecanicaligera"; } }
+      width: 600px;
+      height: 400px; } }

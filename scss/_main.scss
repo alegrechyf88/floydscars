@@ -18,7 +18,7 @@ main {
   }
 }
 
-.contenedor0 {
+.contenedor0 {   /* Index - Pagina principal */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -36,7 +36,7 @@ main {
 
 }
 
-.contenedor3 {
+.contenedor3 { /* Pagina Servicios */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -90,7 +90,7 @@ img {
 
 }
 
-.contenedor1 {
+.contenedor1 { /* Pagina Detailing */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -136,7 +136,7 @@ img {
 }
 
 
-.tienda {
+.tienda { /* Pagina productos */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, auto);
@@ -202,34 +202,19 @@ img {
 }
 
 }
-.contenedor4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    "HEADER HEADER HEADER"
-    "CONTACT SUSCRIPCION UBI"
-    "FOOTER FOOTER FOOTER";
+.contenedor4 { /* Pagina Contacto */
+  display: flex;
+  flex-direction: row;
 
   .ubi,
   .contact,
   .suscripcion {
+    width: 33%;
     padding: 5px;
     margin: 10px;
     border: solid gray 3px;
   }
 
-  .ubi {
-    grid-area: UBI;
-  }
-
-  .contact {
-    grid-area: CONTACT;
-  }
-
-  .suscripcion {
-    grid-area: SUSCRIPCION;
-  }
 
   .suscripcion label,
   .contact label {
