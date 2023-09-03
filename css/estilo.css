@@ -200,8 +200,8 @@ footer {
     display: flex;
     flex-direction: column; }
     .contenedor0 .imgprinc {
-      width: 450px;
-      height: 280px; }
+      width: 90vw;
+      height: 40vh; }
   .contenedor4 {
     /* Pagina Contacto */
     display: flex;
