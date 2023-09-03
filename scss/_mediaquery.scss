@@ -28,15 +28,8 @@
   }
 }
     .contenedor1 { /* Pagina Detailing */
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat (5, auto);
-      grid-template-areas:
-        "TITULO"
-        "GOL"
-        "FORDK"
-        "CHEVROLET"
-        "SPIN";
+      display: flex;
+      flex-direction: column;
 
         .divimg{
           display: flex;
