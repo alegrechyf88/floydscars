@@ -167,6 +167,11 @@ main {
     padding: 5px;
     margin: 10px;
     border: solid gray 3px; }
+    .contenedor4 .ubi .mapa,
+    .contenedor4 .contact .mapa,
+    .contenedor4 .suscripcion .mapa {
+      width: 31.5vw;
+      height: 450px; }
   .contenedor4 .suscripcion label,
   .contenedor4 .contact label {
     width: 200px;
