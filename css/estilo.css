@@ -215,21 +215,28 @@ footer {
     .contenedor4 .ubi,
     .contenedor4 .contact,
     .contenedor4 .suscripcion {
-      width: 100%;
+      width: auto;
       padding: 5px;
       margin: 10px;
       border: solid gray 3px; }
-  .contenedor1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat 5, auto;
-    grid-template-areas: "TITULO" "GOL" "FORDK" "CHEVROLET" "SPIN"; }
-  .contenedor3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat 5, auto;
-    grid-template-areas: "TITULO" "preparadopventa" "chaperia" "lavadofull" "mecanicaligera"; }
-  footer .piepagina {
-    width: 100%; }
-    footer .piepagina li a {
-      font-size: 0; } }
+      .contenedor4 .ubi .mapa,
+      .contenedor4 .contact .mapa,
+      .contenedor4 .suscripcion .mapa {
+        width: 100vw; }
+    .contenedor4 .contenedor1 {
+      /* Pagina Detailing */
+      width: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat 5, auto;
+      grid-template-areas: "TITULO" "GOL" "FORDK" "CHEVROLET" "SPIN"; }
+    .contenedor4 .contenedor3 {
+      /* Pagina Servicios */
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat 5, auto;
+      grid-template-areas: "TITULO" "preparadopventa" "chaperia" "lavadofull" "mecanicaligera"; }
+    .contenedor4 footer .piepagina {
+      width: 100%; }
+      .contenedor4 footer .piepagina li a {
+        font-size: 0; } }

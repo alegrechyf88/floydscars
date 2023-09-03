@@ -17,14 +17,16 @@
     .ubi,
     .contact,
     .suscripcion {
-      width: 100%;
+      width: auto;
       padding: 5px;
       margin: 10px;
       border: solid gray 3px;
-      
+
+      .mapa {width:100vw;
     }
   }
-    .contenedor1 {
+    .contenedor1 { /* Pagina Detailing */
+      width: auto;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat (5, auto);
@@ -37,7 +39,7 @@
     }
   
   
-    .contenedor3 {
+    .contenedor3 { /* Pagina Servicios */
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat (5, auto);
@@ -63,3 +65,4 @@ li {
     }
   }
   }
+}
