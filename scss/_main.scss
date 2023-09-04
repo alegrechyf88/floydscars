@@ -18,25 +18,27 @@ main {
   }
 }
 
-.contenedor0 {   /* Index - Pagina principal */
+.contenedor0 {
+  /* Index - Pagina principal */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 
-.nosotros,
-.recomienda {
-  padding: 5px;
-  margin: 10px;
+  .nosotros,
+  .recomienda {
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .imgprinc {
+    width: 600px;
+    height: 400px;
+  }
+
 }
 
-.imgprinc {
-  width: 600px;
-  height: 400px;
-}
-
-}
-
-.contenedor3 { /* Pagina Servicios */
+.contenedor3 {
+  /* Pagina Servicios */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
@@ -44,91 +46,100 @@ main {
     "preparadopventa chaperia"
     "lavadofull mecanicaligera";
 
-    .imserv {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    
-    img {width: 90%;}
-    }
-    .titulo {
-      grid-area: TITULO;
-    }
+  .imserv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    .carousel-inner img {
-      display: flex;
-      margin: 0 auto;
+    img {
+      width: 90%;
     }
+  }
 
-    .preparadopventa {
-      grid-area: preparadopventa;
-    }
-    
-    .chaperia {
-      grid-area: chaperia;
-    }
-    
-    .lavadofull {
-      grid-area: lavadofull;
-    }
-    
-    .mecanicaligera {
-      grid-area: mecanicaligera;
-    }
-img {
-      width: 400px;
-      border: 1px double gray;
-    }
+  .titulo {
+    grid-area: TITULO;
+  }
 
-.preparadopventa,
-.chaperia,
-.lavadofull,
-.mecanicaligera {
-  padding: 20px;
-  box-shadow: 0px 0px 10px 0px #333 inset;
-  margin: 10px;
+  .carousel-inner img {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .preparadopventa {
+    grid-area: preparadopventa;
+  }
+
+  .chaperia {
+    grid-area: chaperia;
+  }
+
+  .lavadofull {
+    grid-area: lavadofull;
+  }
+
+  .mecanicaligera {
+    grid-area: mecanicaligera;
+  }
+
+  img {
+    width: 400px;
+    border: 1px double gray;
+  }
+
+  .preparadopventa,
+  .chaperia,
+  .lavadofull,
+  .mecanicaligera {
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #333 inset;
+    margin: 10px;
+  }
+
 }
 
-}
-
-.contenedor1 { /* Pagina Detailing */
+.contenedor1 {
+  /* Pagina Detailing */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "TITULO TITULO"
     "GOL FORDK"
     "SPIN CHEVROLET";
-    .gol,
-    .chevrolet,
-    .spin,
-    .fordk {
-      padding: 20px;
-      margin: 10px;
-      box-shadow: 0px 0px 10px 0px #333 inset;
-    }
-    .titulo {
-      grid-area: TITULO;
-    }
-    .gol {
-      grid-area: GOL;
-    }
-    
-    .chevrolet {
-      grid-area: CHEVROLET;
-    }
-    
-    .spin {
-      grid-area: SPIN;
-    }
-    
-    .fordk {
-      grid-area: FORDK;
-    }
 
-    .divimg {display:flex;
+  .gol,
+  .chevrolet,
+  .spin,
+  .fordk {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 0px #333 inset;
+  }
+
+  .titulo {
+    grid-area: TITULO;
+  }
+
+  .gol {
+    grid-area: GOL;
+  }
+
+  .chevrolet {
+    grid-area: CHEVROLET;
+  }
+
+  .spin {
+    grid-area: SPIN;
+  }
+
+  .fordk {
+    grid-area: FORDK;
+  }
+
+  .divimg {
+    display: flex;
     justify-content: center;
     align-items: center;
 
-img {
+    img {
       width: 300px;
       border: 1px double gray;
     }
@@ -136,7 +147,8 @@ img {
 }
 
 
-.tienda { /* Pagina productos */
+.tienda {
+  /* Pagina productos */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, auto);
@@ -150,59 +162,63 @@ img {
 
 
 
-.productos {
-  grid-area: productos;
-  padding: 10px;
-  border: 2px double gray;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  .productos {
+    grid-area: productos;
+    padding: 40px;
+    border: 2px double gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    img {
+      width: 150px;
+      border: 1px double gray;
+    
+
+   &:hover {
+      border: 4px double rgb(0, 0, 0);
+    }
+
+  }
+    .prodx {
+      margin: 20px;
+      padding: 20px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .vertical {
+    background-color: #000;
+    grid-area: vertical;
+
+
+ ul {
+    list-style-type: none;
+    width: 400px;
+    background-color: black;
+  }
+
+ li a {
+    display: block;
+    color: white;
+    font-family: Ysabeau SC;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+ & a:hover {
+    font-family: Ysabeau SC;
+    background-color: rgba(89, 89, 89, 0.5);
+    color: red;
+  }
+
 }
 
-.prodx {
-  margin: 20px;
-  padding: 20px;
-  width: 200px;
-  height: 200px;
 }
 
-.productos img {
-  width: 150px;
-  border: 1px double gray;
-}
-
-.productos img:hover {
-  width: 200px;
-  border: 2px double gray;
-}
-
-.vertical {
-  background-color: #000;
-  grid-area: vertical;
-}
-
-.vertical ul {
-  list-style-type: none;
-  width: 400px;
-  background-color: black;
-}
-
-.vertical li a {
-  display: block;
-  color: white;
-  font-family: Ysabeau SC;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.vertical li a:hover {
-  font-family: Ysabeau SC;
-  background-color: rgba(89, 89, 89, 0.5);
-  color: red;
-}
-
-}
-.contenedor4 { /* Pagina Contacto */
+.contenedor4 {
+  /* Pagina Contacto */
   display: flex;
   flex-direction: row;
 
@@ -214,8 +230,10 @@ img {
     margin: 10px;
     border: solid gray 3px;
 
-    .mapa {width:31.5vw;
-    height: 450px;}
+    .mapa {
+      width: 31.5vw;
+      height: 450px;
+    }
   }
 
 
@@ -224,5 +242,5 @@ img {
     width: 200px;
     text-align: center;
   }
- 
+
 }

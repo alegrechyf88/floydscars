@@ -1,6 +1,7 @@
 @media only screen and (max-width: 480px) {
 
-  .contenedor0 {  /* Index - Pagina principal */
+  .contenedor0 {
+    /* Index - Pagina principal */
     display: flex;
     flex-direction: column;
 
@@ -8,12 +9,14 @@
       width: 90vw;
       height: 40vh;
     }
-  
+
   }
-  .contenedor4 { /* Pagina Contacto */
+
+  .contenedor4 {
+    /* Pagina Contacto */
     display: flex;
     flex-direction: column;
-  
+
     .ubi,
     .contact,
     .suscripcion {
@@ -22,41 +25,73 @@
       margin: 10px;
       border: solid gray 3px;
 
-      .mapa {width:90vw;
+      .mapa {
+        width: 90vw;
         height: auto;
+      }
+    }
+  }
+
+  .contenedor1 {
+    /* Pagina Detailing */
+    display: flex;
+    flex-direction: column;
+    width: auto;
+
+    .divimg {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+  .contenedor3 {
+    /* Pagina Servicios */
+    display: flex;
+    flex-direction: column;
+    width: auto;
+
+    .imserv {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .tienda {
+
+    display: flex;
+
+    .productos {
+      align-items: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .prodx {
+        padding-bottom: 30vh;
+      }
+    }
+
+    .vertical {
+      display: none;
+    }
+  }
+
+  footer {
+
+
+    .piepagina {
+      width: 100%;
+
+      li {
+        a {
+          font-size: 0;
+        }
+      }
     }
   }
 }
-    .contenedor1 { /* Pagina Detailing */
-      display: flex;
-      flex-direction: column;
-      width: auto;
-
-        .divimg{
-          display: flex;
-          flex-direction: column;
-    }
-  
-    }
-    .contenedor3 { /* Pagina Servicios */
-      display: flex;
-      flex-direction: column;
-      width: auto;
-
-      .imserv {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      
-      img {width: 100%;}
-    }
-    }
-    footer {
-
-
-.piepagina {width: 100%;
-li { 
-  a {font-size: 0;}
-}
-}
-    }
-  }

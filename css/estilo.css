@@ -122,39 +122,38 @@ main {
   grid-template-areas: "nav nav nav nav" "vertical productos productos productos" "vertical productos productos productos" "vertical productos productos productos" "vertical productos productos productos" "footer footer footer footer"; }
   .tienda .productos {
     grid-area: productos;
-    padding: 10px;
+    padding: 40px;
     border: 2px double gray;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr; }
-  .tienda .prodx {
-    margin: 20px;
-    padding: 20px;
-    width: 200px;
-    height: 200px; }
-  .tienda .productos img {
-    width: 150px;
-    border: 1px double gray; }
-  .tienda .productos img:hover {
-    width: 200px;
-    border: 2px double gray; }
+    .tienda .productos img {
+      width: 150px;
+      border: 1px double gray; }
+      .tienda .productos img:hover {
+        border: 4px double black; }
+    .tienda .productos .prodx {
+      margin: 20px;
+      padding: 20px;
+      width: 200px;
+      height: 200px; }
   .tienda .vertical {
     background-color: #000;
     grid-area: vertical; }
-  .tienda .vertical ul {
-    list-style-type: none;
-    width: 400px;
-    background-color: black; }
-  .tienda .vertical li a {
-    display: block;
-    color: white;
-    font-family: Ysabeau SC;
-    padding: 8px 16px;
-    text-decoration: none; }
-  .tienda .vertical li a:hover {
-    font-family: Ysabeau SC;
-    background-color: rgba(89, 89, 89, 0.5);
-    color: red; }
+    .tienda .vertical ul {
+      list-style-type: none;
+      width: 400px;
+      background-color: black; }
+    .tienda .vertical li a {
+      display: block;
+      color: white;
+      font-family: Ysabeau SC;
+      padding: 8px 16px;
+      text-decoration: none; }
+    .tienda .vertical a:hover {
+      font-family: Ysabeau SC;
+      background-color: rgba(89, 89, 89, 0.5);
+      color: red; }
 
 .contenedor4 {
   /* Pagina Contacto */
@@ -242,6 +241,17 @@ footer {
       grid-template-columns: 1fr 1fr; }
       .contenedor3 .imserv img {
         width: 100%; }
+  .tienda {
+    display: flex; }
+    .tienda .productos {
+      align-items: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .tienda .productos .prodx {
+        padding-bottom: 30vh; }
+    .tienda .vertical {
+      display: none; }
   footer .piepagina {
     width: 100%; }
     footer .piepagina li a {
