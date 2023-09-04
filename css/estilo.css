@@ -248,11 +248,12 @@ footer {
       width: 100%;
       display: flex;
       flex-direction: column; }
-      .tienda .productos .prodx {
-        padding-bottom: 30vh; }
-    .tienda .vertical {
-      display: none; }
-  footer .piepagina {
-    width: 100%; }
-    footer .piepagina li a {
-      font-size: 0; } }
+    .tienda .prodx {
+      padding-bottom: 30vh; }
+  .vertical {
+    display: none; } }
+
+footer .piepagina {
+  width: 100%; }
+  footer .piepagina li a {
+    font-size: 0; }
